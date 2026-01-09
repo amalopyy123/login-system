@@ -1,0 +1,17 @@
+{
+    "name": "amalo/login-system",
+    "description": "A user authentication system.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Amalo\\LoginSystem\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "amalopyy123",
+            "email": "amalopyy123@gmail.com"
+        }
+    ],
+    "require": {}
+}
