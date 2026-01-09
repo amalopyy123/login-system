@@ -14,7 +14,7 @@ unset($_SESSION['old_input']);
                 <h3 class="card-title text-center mb-4">Create Account</h3>
 
                 <!-- 增加 id 方便 JS 获取 -->
-                <form id="registerForm" action="register.php" method="POST">
+                <form id="registerForm" action="register" method="POST">
                     <div class="mb-3">
                         <label class="form-label">Username</label>
                         <!-- 关键点：value 属性回填，并使用 htmlspecialchars 防御 XSS -->
@@ -53,7 +53,7 @@ unset($_SESSION['old_input']);
                 </form>
 
                 <div class="mt-3 text-center">
-                    <a href="login.php">Already have an account? Login</a>
+                    <a href="login">Already have an account? Login</a>
                 </div>
             </div>
         </div>

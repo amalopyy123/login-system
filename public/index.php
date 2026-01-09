@@ -10,7 +10,7 @@ Session::start();
 
 // 检查是否登录，未登录则跳转到登录页
 if (!AuthService::isLoggedIn()) {
-    header('Location: login.php');
+    header('Location: login');
     exit;
 }
 

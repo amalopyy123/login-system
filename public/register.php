@@ -12,7 +12,7 @@ Session::start();
 
 // 如果已经登录，直接跳到首页
 if (AuthService::isLoggedIn()) {
-    header('Location: index.php');
+    header('Location: index');
     exit;
 }
 
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 Session::set('success', "Registration successful! Please login.");
                 // 注册成功，一定要清除旧输入，防止干扰
                 Session::remove('old_input'); 
-                header('Location: login.php');
+                header('Location: login');
                 exit;
             }
         } catch (Exception $e) {
@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'email'    => $data['email']
         ]);
 
-        header('Location: register.php'); // PRG 重定向
+        header('Location: register'); // PRG 重定向
         exit;
     }
 }

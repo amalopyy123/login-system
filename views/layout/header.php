@@ -14,14 +14,14 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="/">Amalo System</a>
+        <a class="navbar-brand" href="/">User System</a>
         <div class="navbar-nav ms-auto">
             <?php if (\Amalo\LoginSystem\Services\AuthService::isLoggedIn()): ?>
                 <span class="nav-link text-light">Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?></span>
-                <a class="nav-item nav-link" href="logout.php">Logout</a>
+                <a class="nav-item nav-link" href="logout">Logout</a>
             <?php else: ?>
-                <a class="nav-item nav-link" href="login.php">Login</a>
-                <a class="nav-item nav-link" href="register.php">Register</a>
+                <a class="nav-item nav-link" href="login">Login</a>
+                <a class="nav-item nav-link" href="register">Register</a>
             <?php endif; ?>
         </div>
     </div>

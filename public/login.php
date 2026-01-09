@@ -9,7 +9,7 @@ use Amalo\LoginSystem\Services\AuthService;
 Session::start();
 
 if (AuthService::isLoggedIn()) {
-    header('Location: index.php');
+    header('Location: index');
     exit;
 }
 
@@ -21,11 +21,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     if ($authService->login($email, $password)) {
         // 登录成功，跳转到首页
-        header('Location: index.php');
+        header('Location: index');
         exit;
     } else {
         Session::set('error', "Invalid email or password.");
-        header('Location: login.php'); // PRG 模式：重定向防止重复提交
+        header('Location: login'); // PRG 模式：重定向防止重复提交
         exit;
     }
 }

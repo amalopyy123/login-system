@@ -9,7 +9,7 @@
         </p>
         <hr class="my-4">
         <p>This is a protected area that only authenticated users can see.</p>
-        <a href="logout.php" class="btn btn-danger btn-lg mt-3">Logout Now</a>
+        <a href="logout" class="btn btn-danger btn-lg mt-3">Logout Now</a>
     </div>
 </div>
 
