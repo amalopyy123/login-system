@@ -14,7 +14,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="/">User System</a>
+        <a class="navbar-brand" href="/">Login System</a>
         <div class="navbar-nav ms-auto">
             <?php if (\Amalo\LoginSystem\Services\AuthService::isLoggedIn()): ?>
                 <span class="nav-link text-light">Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?></span>

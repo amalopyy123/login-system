@@ -31,7 +31,7 @@ composer install
 
 ```bash
 # 将 public 目录作为 Web 根目录
-php -S localhost:8000 -t public/
+php -S 127.0.0.1:8000 router.php
 ```
 
 ### 5. 访问

@@ -8,7 +8,7 @@
             You have successfully logged in to the system.
         </p>
         <hr class="my-4">
-        <p>This is a protected area that only authenticated users can see.</p>
+        <p>My Account Page</p>
         <a href="logout" class="btn btn-danger btn-lg mt-3">Logout Now</a>
     </div>
 </div>
